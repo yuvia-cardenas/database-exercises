@@ -13,7 +13,7 @@ SELECT *
 FROM employees
 WHERE first_name = 'Irena' OR first_name = 'Vidya' OR first_name = 'Maya'
 
-4 612
+4 441
 USE employees;
 
 SELECT *
@@ -27,16 +27,16 @@ SELECT COUNT(last_name)
 FROM employees
 WHERE last_name LIKE 'E%'
 
-6 30723
+6 a 30723
 SELECT COUNT(last_name)
 FROM employees
 WHERE last_name LIKE 'E%' OR last_name LIKE '%e'
-23393 
+6 b 23393 
 SELECT *
 FROM employees
 WHERE last_name not LIKE 'E%' AND last_name LIKE '%e'
 
-7 899
+7 a 899
 SELECT COUNT(last_name)
 FROM employees
 WHERE last_name LIKE 'E%' AND last_name LIKE '%e'
@@ -44,7 +44,7 @@ we changed the limit of rows in drop down
 SELECT *
 FROM employees
 WHERE last_name LIKE 'E%' AND last_name LIKE '%e'
-24292
+7 b 24292
 SELECT COUNT(last_name)
 FROM employees
 WHERE last_name LIKE '%e'
